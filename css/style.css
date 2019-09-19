@@ -9,9 +9,11 @@ body,
 main {
   height: 100%;
 }
-html.sr section span{
+
+html.sr section span {
   visibility: hidden;
 }
+
 body {
   font: 14px/1.5 Arial;
 }
@@ -35,7 +37,7 @@ cleatfix {
 body {
   padding-left: 20%;
   padding-right: 20%;
-  background: #bdbdbd;
+  background: url(../img/bg1.jpg);
 }
 
 .page {
@@ -74,7 +76,7 @@ body {
 
 /*  main  */
 .page>.main {
-  padding: 40px;
+  padding: 40px 40px 0;
   padding-top: 6px;
   display: block;
 }
@@ -91,14 +93,14 @@ body {
 .main>.title p {
   font-size: 20px;
 }
-.skill{
+
+.skill {
   display: block;
   width: 80%;
   margin: auto;
-  margin-bottom: 4vh;
 }
-.skill h2 {
-}
+
+.skill h2 {}
 
 
 .skill .topline {
@@ -144,15 +146,17 @@ body {
   margin-left: 24px;
 }
 
-.works{
+.works {
   display: block;
   width: 80%;
   margin: auto;
   margin-bottom: 4vh;
 }
+
 .works h2 {
   position: relative;
 }
+
 /* .works h2::before {
   position: absolute;
   top: 6vh;
@@ -162,44 +166,46 @@ body {
 } */
 
 .works h3 {
-  text-align: center;
-  margin: 10px;
-}
-.works .link{
-  text-align: center;
-}
-.works .link a:hover{
-  text-decoration:underline;
+  display: inline-block;
+  line-height: 2em;
+  font-size: 150%;
+  width: 16vh;
 }
 
 .works img {
   background-size: cover;
-  width: 400px;
-  height: 300px;
+  width: 40vh;
+  height: 19vh;
   background-position: center center;
   display: block;
-  margin: 2vh auto;
+  margin: 0 auto 0.5vh;
 }
+
 .works>span {
   display: block;
-  /* border: 1px solid #000; */
   padding: 10px;
-  margin: 4vh 0;
+  margin: 4vh;
   background: #FFFFFF;
 }
-.works >span:hover{
+
+.works>span:hover {
   box-shadow: 0 10px 20px #bdbdbd;
 }
+
 .works>span a {
-  width: 20%;
   display: inline-block;
+  margin-left: 4vh;
   font-size: 120%;
+  font-weight: 600;
+}
+.works>span a:hover {
+  text-decoration: underline;
 }
 
 .works>span p {
   /* width: 76%;
   margin: auto; */
-  margin: 1vh 0;
+  margin: 1vh 0 0 0;
 }
 
 .works .animation img {
@@ -207,33 +213,37 @@ body {
 }
 
 .works .ui img {
-  background-image: url(../img/wheel.jpg);
+  background-image: url(../img/wheel.png);
   background-size: cover;
 }
 
 .works .fm img {
   background-image: url(../img/fm.png);
 }
+
 .works .youzan img {
-  background-image: url(../img/youzan.jpg);
-  width: 226px;
-  height: 400px;
+  background-image: url(../img/youzan.png);
 }
-.works .cnode img{
-  background-image: url(../img/cnode.jpg);
+
+.works .cnode img {
+  background-image: url(../img/cnode.png);
 }
+
 .experience,
-.edu{
-  width: 80%;
+.edu {
+  width: 100%;
   display: block;
   margin: auto;
-  margin-bottom: 4vh;
+  padding: 22px 123px;
+  background: #EFF3F6;
 }
+
 .experience p,
 .edu p {
   padding: 10px;
 }
-.highlight{
+
+.highlight {
   color: #E91E63;
   background: #EEEEEE;
 }
