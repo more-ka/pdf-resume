@@ -16,7 +16,10 @@
       overflow: hidden;
     }
   </style>
+  <script src="https://cdn.bootcss.com/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
+
 </head>
+
 <body>
   <div class="page clearfix">
     <header class="topLogo">
@@ -32,7 +35,7 @@
       </div>
       <section class="works">
         <h2>项目展示</h2>
-        <span class="ui">
+        <span class="ui" data-scroll-reveal>
           <h3>Vue UI组件</h3>
           <img class="ui-img">
           <div class="link">
@@ -48,7 +51,7 @@
             发布于 npmjs.org。完成该项目使我对 Vue 的常用特征更加熟悉，
             同时提升了自己对 <span class="highlight">前端工程化流程以及单元测试重要性</span> 的理解</p>
         </span>
-        <span class="youzan">
+        <span class="youzan" data-scroll-reveal>
           <h3>有赞商城</h3>
           <img class="canvas-img">
           <div class="link">
@@ -58,7 +61,7 @@
           <p>关键词: <span class="highlight">webpack2 vue vue-cli vuex vue-router</span></p>
           <p>描述: </p>
         </span>
-        <span class="fm">
+        <span class="fm" data-scroll-reveal>
           <h3>Fm播放器</h3>
           <img class="fm-img">
           <div class="link">
@@ -70,7 +73,7 @@
             <span class="highlight">MVC思想封装</span> ,
             网站支持 <span class="highlight">响应式</span> (不支持手机端), 歌曲进度条点击, 歌词变色功能</p>
         </span>
-        <span class="cnode">
+        <span class="cnode" data-scroll-reveal>
           <h3>cnode社区</h3>
           <img class="cnode-img">
           <div class="link">
@@ -82,7 +85,7 @@
               class="highlight">Axios</span> 获取数据，使用 <span class="highlight">Vue-Router</span> 进行前端路由的切换及传参，使用 <span
               class="highlight">watch</span> 监听路由的变化，<span class="highlight">Webpack 打包</span> </p>
         </span>
-        <span class="animation">
+        <span class="animation" data-scroll-reveal>
           <h3>滑稽</h3>
           <img class="animation-img">
           <div class="link">
@@ -124,6 +127,15 @@
   </div>
 </body>
 <script src="//at.alicdn.com/t/font_960076_zj6t59fqh0b.js"></script>
-<!-- 添加项目 -->
-
+<script>
+    window.onload = function () {
+      ScrollReveal().reveal('section span', {
+        reset: true,
+        origin: 'bottom',
+        easing: 'ease-in-out',
+        distance: '50px',
+        opcity: 0.5,
+      });
+    }    
+  </script>
 </html>

@@ -9,7 +9,9 @@ body,
 main {
   height: 100%;
 }
-
+html.sr section span{
+  visibility: hidden;
+}
 body {
   font: 14px/1.5 Arial;
 }
